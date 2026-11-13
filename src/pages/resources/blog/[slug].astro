@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPost, formatPostDate } from "../../../data/posts";
+
+const { slug } = Astro.params;
+const post = slug ? getPost(slug) : undefined;
+
+if (!post) {
+  return Astro.redirect("/resources/blog");
+}
+---
+
+<BaseLayout
+  title={`${post.title} — D-Right Blog`}
+  description={post.excerpt}
+  bodyClass="page-blog page-blog-post"
+  active="blog"
+  demoHref="/solutions/mgw#demo"
+  demoLabel="Book a demo"
+  footerVariant="home"
+>
+  <main id="main">
+    <article class="section blog-post" data-reveal>
+      <p class="blog-card-meta">
+        <a href="/resources/blog">Blog</a>
+        <span aria-hidden="true">·</span>
+        <span>{post.category}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime={post.date}>{formatPostDate(post.date)}</time>
+        <span aria-hidden="true">·</span>
+        <span>{post.readMins} min read</span>
+      </p>
+      <h1>{post.title}</h1>
+      <p class="blog-post-dek">{post.excerpt}</p>
+      <div class="blog-post-body">
+        {post.body.map((para) => <p>{para}</p>)}
+      </div>
+      <p class="blog-post-back">
+        <a class="product-link" href="/resources/blog">← All articles</a>
+      </p>
+    </article>
+  </main>
+</BaseLayout>

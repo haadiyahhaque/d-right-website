@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Careers — D-Right Technologies"
+  description="Join D-Right Technologies. Apply as a Medical-Grade Web Developer, Clinical Technology Advisor, or explore corporate partnerships."
+  bodyClass="page-careers"
+  active="careers"
+  demoHref="/solutions/mgw#demo"
+  demoLabel="Book a demo"
+  footerVariant="home"
+>
+  <main id="main">
+    <section class="section careers-hero" aria-labelledby="careers-title">
+      <div class="careers-hero-inner" data-reveal>
+        <p class="eyebrow">Careers</p>
+        <h1 id="careers-title">Work with us on healthcare technology</h1>
+        <p class="careers-lead">
+          Developers, clinical advisors and partners — one team building tools that make care clearer
+          and faster. Choose a track and apply below.
+        </p>
+        <div class="hero-cta careers-hero-cta">
+          <a class="btn" href="#apply">Apply now</a>
+          <a class="btn btn-ghost" href="#tracks">View tracks</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section careers-tracks" id="tracks" aria-labelledby="tracks-title">
+      <div class="section-head">
+        <p class="eyebrow">Openings</p>
+        <h2 id="tracks-title">Three ways in</h2>
+        <p>Short briefs — pick one, then use the single form underneath.</p>
+      </div>
+
+      <div class="careers-card-grid" data-reveal>
+        <article class="careers-card">
+          <p class="careers-track-num">01</p>
+          <h3>Medical-Grade Web Developer</h3>
+          <p>Doctors and medical students building practice websites in a certified community.</p>
+          <button type="button" class="product-link" data-careers-pick="mg-developer">
+            Apply for this →
+          </button>
+        </article>
+        <article class="careers-card">
+          <p class="careers-track-num">02</p>
+          <h3>Clinical Technology Advisor</h3>
+          <p>Nursing and paramedical professionals advising hospitals on their web presence.</p>
+          <button type="button" class="product-link" data-careers-pick="cta-advisor">
+            Apply for this →
+          </button>
+        </article>
+        <article class="careers-card">
+          <p class="careers-track-num">03</p>
+          <h3>Corporate partnerships</h3>
+          <p>Organisations sponsoring certification cohorts or collaborating on training.</p>
+          <button type="button" class="product-link" data-careers-pick="corporate">
+            Enquire →
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section careers-apply-section" id="apply" aria-labelledby="apply-title">
+      <div class="careers-apply-panel" data-reveal>
+        <div class="careers-apply-head">
+          <p class="eyebrow">Application</p>
+          <h2 id="apply-title">Share your details</h2>
+          <p>One form for all tracks. Switch the option that fits you.</p>
+        </div>
+
+        <form class="careers-form careers-form-compact" data-careers-form enctype="multipart/form-data">
+          <fieldset class="careers-track-switch" data-careers-switch>
+            <legend class="visually-hidden">Select track</legend>
+            <label class="is-active">
+              <input type="radio" name="track" value="mg-developer" checked />
+              <span>Developer</span>
+            </label>
+            <label>
+              <input type="radio" name="track" value="cta-advisor" />
+              <span>Advisor</span>
+            </label>
+            <label>
+              <input type="radio" name="track" value="corporate" />
+              <span>Partnership</span>
+            </label>
+          </fieldset>
+
+          <div class="careers-form-grid">
+            <label>Full name *<input type="text" name="name" required autocomplete="name" /></label>
+            <label>Phone *<input type="tel" name="phone" required autocomplete="tel" /></label>
+            <label data-careers-email>
+              <span class="careers-field-label">Email *</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label data-careers-city>
+              <span class="careers-field-label">City <span class="opt">(optional)</span></span>
+              <input type="text" name="city" autocomplete="address-level2" />
+            </label>
+            <label data-careers-org class="careers-span-2" hidden>
+              <span class="careers-field-label">Organisation *</span>
+              <input type="text" name="organisation" autocomplete="organization" />
+            </label>
+            <div class="careers-cv-row careers-span-2" data-careers-cv-row>
+              <div class="careers-file-field" data-careers-file>
+                <span class="careers-field-label" data-careers-file-label>Curriculum vitae</span>
+                <div class="careers-file-control">
+                  <label class="careers-file-btn-wrap" title="PDF, DOC or DOCX · max 5 MB">
+                    <input
+                      type="file"
+                      name="cvFile"
+                      accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                      data-careers-file-input
+                    />
+                    <span class="careers-file-btn">Choose file</span>
+                  </label>
+                  <span class="careers-file-name" data-careers-file-name>No file chosen</span>
+                </div>
+              </div>
+              <label data-careers-cv>
+                <span class="careers-field-label" data-careers-cv-label>Online profile URL</span>
+                <input type="url" name="cv" placeholder="https://" inputmode="url" />
+              </label>
+            </div>
+            <label class="careers-span-2" data-careers-note>
+              <span data-careers-note-label
+                >Additional information <span class="opt">(optional)</span></span
+              >
+              <textarea name="note" rows="2" placeholder="Relevant experience or availability"></textarea>
+            </label>
+          </div>
+
+          <div class="careers-form-footer">
+            <p class="careers-form-aside">We’ll take it from here.</p>
+            <button type="submit" class="btn careers-submit-btn" data-careers-submit>
+              Submit application
+            </button>
+            <p class="careers-form-success" data-careers-success hidden>
+              Thanks — we received your application and will be in touch.
+            </p>
+            <p class="careers-form-error" data-careers-error hidden></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

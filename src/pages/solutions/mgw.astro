@@ -1,0 +1,718 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="MGW · Medical Grade Website — D-Right Technologies"
+  description="Booking, billing with doctor-share, e-prescriptions, and patient, doctor and admin portals — on one domain you own. Built for doctors, clinics and hospitals in Pakistan."
+  active="mgw"
+  demoHref="#demo"
+  demoLabel="Request a demo"
+  footerVariant="mgw"
+>
+  <main id="main">
+    <!-- HERO: cinematic product stage -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-wash"></div>
+        <p class="hero-watermark">MGW</p>
+      </div>
+
+      <div class="hero-top">
+        <p class="hero-kicker">Medical Grade Website · by D-Right</p>
+        <h1 id="hero-title">The All-in-One Website for Healthcare Providers</h1>
+        <p class="hero-lead">
+          Booking, billing with doctor-share, e-prescriptions, and patient, doctor and admin portals — on one domain you own, behind one login. Built for doctors, clinics and hospitals in Pakistan.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#demo">Request a demo</a>
+          <a class="btn btn-ghost" href="https://wa.me/923033330023" target="_blank" rel="noopener">Contact on WhatsApp</a>
+        </div>
+        <ul class="hero-facts">
+          <li>Live in 10 days</li>
+          <li>Setup by our team</li>
+          <li>Your own domain</li>
+        </ul>
+      </div>
+
+      <div class="hero-orbit" aria-label="Live MGW preview" data-orbit>
+        <div class="orbit-phone" data-hero-stage>
+          <div class="phone-bezel">
+            <div class="phone-notch"></div>
+            <div class="phone-ui">
+              <div class="phone-bar">
+                <span>your-clinic.pk</span>
+                <strong>Today</strong>
+              </div>
+              <div class="stat-row">
+                <div><b>18</b>appts</div>
+                <div><b>46.5k</b>PKR</div>
+                <div><b>11</b>e-Rx</div>
+              </div>
+              <p class="ui-label">Dr. Ayesha Malik · OPD 2</p>
+              <ul class="appt-list" data-appt-list>
+                <li class="appt is-new"><time>11:30</time><div><strong>Sana Rafiq</strong><span>Follow-up</span></div><em>New</em></li>
+                <li class="appt"><time>10:45</time><div><strong>Imran Khalid</strong><span>Consult</span></div><em class="ok">Arrived</em></li>
+                <li class="appt"><time>11:00</time><div><strong>Maryam Nadeem</strong><span>ECG</span></div><em class="warn">Confirmed</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <aside class="orbit-rx" aria-hidden="true">
+          <p class="orbit-tag">e-Prescription · Sana Rafiq</p>
+          <p><strong>Bisoprolol 2.5 mg</strong><span>1+0+0 · 30 days</span></p>
+          <p><strong>Atorvastatin 10 mg</strong><span>0+0+1 · 30 days</span></p>
+          <em>Linked to patient portal</em>
+        </aside>
+
+        <aside class="orbit-invoice" aria-hidden="true">
+          <p class="orbit-tag">Invoice #INV-2041</p>
+          <p>Consultation · follow-up <b>2,500</b></p>
+          <p>ECG <b>1,500</b></p>
+          <div class="invoice-total">
+            <span>Total PKR</span>
+            <strong>4,000</strong>
+          </div>
+          <div class="share-row">
+            <span>Doctor 60%</span>
+            <span>Clinic 40%</span>
+          </div>
+        </aside>
+      </div>
+
+    </section>
+
+    <section class="clients" aria-label="Practices already on MGW">
+      <aside class="clients-rail" aria-hidden="true">
+        <p class="clients-label">Already running on MGW</p>
+      </aside>
+      <div class="clients-marquee" aria-label="Live practices">
+        <div class="marquee-track">
+          <a class="practice" href="https://bestgastroliverclinic.com/" target="_blank" rel="noopener">
+            <span class="practice-spec">Gastroenterology</span>
+            <strong>Best Gastro Liver Clinic</strong>
+          </a>
+          <a class="practice" href="https://drahmadtanveercardiologist.clinta.biz/" target="_blank" rel="noopener">
+            <span class="practice-spec">Cardiology</span>
+            <strong>Dr Ahmad Tanveer</strong>
+          </a>
+          <a class="practice" href="https://drayazaesthetics.clinta.biz/" target="_blank" rel="noopener">
+            <span class="practice-spec">Aesthetics</span>
+            <strong>Dr Ayaz Aesthetics</strong>
+          </a>
+          <a class="practice" href="https://drfaizullahbrainandspine.clinta.biz/" target="_blank" rel="noopener">
+            <span class="practice-spec">Neurosurgery</span>
+            <strong>Dr Faizullah</strong>
+          </a>
+          <a class="practice" href="https://drrimshaazharendocrinologist.clinta.biz/" target="_blank" rel="noopener">
+            <span class="practice-spec">Endocrinology</span>
+            <strong>Dr Rimsha Azhar</strong>
+          </a>
+          <a class="practice" href="https://kabeercardiocare.com/" target="_blank" rel="noopener">
+            <span class="practice-spec">Cardiology</span>
+            <strong>Kabeer Cardio Care</strong>
+          </a>
+          <a class="practice" href="https://drmuizzagynae.com/" target="_blank" rel="noopener">
+            <span class="practice-spec">Gynaecology &amp; Obstetrics</span>
+            <strong>Dr Muizza</strong>
+          </a>
+          <a class="practice" href="https://drzameerpaed.com/" target="_blank" rel="noopener">
+            <span class="practice-spec">Paediatrics</span>
+            <strong>Dr Zameer</strong>
+          </a>
+          <a class="practice" href="https://dentalspec.org/" target="_blank" rel="noopener">
+            <span class="practice-spec">Dentistry</span>
+            <strong>Dental Spec</strong>
+          </a>
+          <a class="practice" href="https://rathoremedicalcomplex.com/" target="_blank" rel="noopener">
+            <span class="practice-spec">Ophthalmology</span>
+            <strong>Rathore Medical Complex</strong>
+          </a>
+          <!-- duplicate for seamless loop -->
+          <a class="practice" href="https://bestgastroliverclinic.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Gastroenterology</span>
+            <strong>Best Gastro Liver Clinic</strong>
+          </a>
+          <a class="practice" href="https://drahmadtanveercardiologist.clinta.biz/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Cardiology</span>
+            <strong>Dr Ahmad Tanveer</strong>
+          </a>
+          <a class="practice" href="https://drayazaesthetics.clinta.biz/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Aesthetics</span>
+            <strong>Dr Ayaz Aesthetics</strong>
+          </a>
+          <a class="practice" href="https://drfaizullahbrainandspine.clinta.biz/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Neurosurgery</span>
+            <strong>Dr Faizullah</strong>
+          </a>
+          <a class="practice" href="https://drrimshaazharendocrinologist.clinta.biz/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Endocrinology</span>
+            <strong>Dr Rimsha Azhar</strong>
+          </a>
+          <a class="practice" href="https://kabeercardiocare.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Cardiology</span>
+            <strong>Kabeer Cardio Care</strong>
+          </a>
+          <a class="practice" href="https://drmuizzagynae.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Gynaecology &amp; Obstetrics</span>
+            <strong>Dr Muizza</strong>
+          </a>
+          <a class="practice" href="https://drzameerpaed.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Paediatrics</span>
+            <strong>Dr Zameer</strong>
+          </a>
+          <a class="practice" href="https://dentalspec.org/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Dentistry</span>
+            <strong>Dental Spec</strong>
+          </a>
+          <a class="practice" href="https://rathoremedicalcomplex.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+            <span class="practice-spec">Ophthalmology</span>
+            <strong>Rathore Medical Complex</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section problem" id="problem" aria-labelledby="problem-title">
+      <div class="section-head">
+        <p class="eyebrow">01 · The problem</p>
+        <h2 id="problem-title">Already digital — just not in one place.</h2>
+        <p>Most practices run a listing, a brochure site, a billing till and maybe a chart system. Staff become the integration.</p>
+      </div>
+
+      <div class="chaos" data-reveal>
+        <article class="chaos-item" style="--i:0">
+          <h3>Aggregator profile</h3>
+          <p>Marham, Oladoc listing</p>
+          <span>Rented space. Competitors listed next to you; the platform sets the terms.</span>
+        </article>
+        <article class="chaos-item" style="--i:1">
+          <h3>Conventional website</h3>
+          <p>Agency or template brochure</p>
+          <span>Informs but rarely transacts. Every edit needs the original developer.</span>
+        </article>
+        <article class="chaos-item" style="--i:2">
+          <h3>POS software</h3>
+          <p>Front-desk billing till</p>
+          <span>Disconnected from the website, appointments and clinical record.</span>
+        </article>
+        <article class="chaos-item" style="--i:3">
+          <h3>EMR</h3>
+          <p>Standalone clinical chart</p>
+          <span>Isolated from billing and from the patient. Mostly in large hospitals.</span>
+        </article>
+        <article class="chaos-item" style="--i:4">
+          <h3>Hospital ERP</h3>
+          <p>Institution back office</p>
+          <span>High cost, multi-month implementation. Out of reach for most.</span>
+        </article>
+      </div>
+
+      <div class="compare" data-reveal data-compare>
+        <div class="compare-head">
+          <button type="button" class="compare-tab is-active" data-compare-tab="without" aria-pressed="true">Without MGW</button>
+          <button type="button" class="compare-tab" data-compare-tab="with" aria-pressed="false">With MGW</button>
+        </div>
+
+        <div class="compare-panel is-active" data-compare-panel="without">
+          <div class="compare-copy">
+            <h3>Five logins. No shared thread.</h3>
+            <p>Most practices stitch tools together by hand. The same patient is typed in three times, doctor-share is worked out in a notebook, and follow-ups depend on someone remembering.</p>
+            <ul>
+              <li>Marketplace listing · rented space, competitors beside you</li>
+              <li>Brochure website · informs, rarely books or bills</li>
+              <li>POS till · disconnected from appointments and records</li>
+              <li>EMR / charts · isolated from billing and the patient</li>
+              <li>Hospital ERP · priced and paced for the largest institutions</li>
+            </ul>
+          </div>
+          <div class="fragment-stage" aria-hidden="true">
+            <div class="frag-desk">
+              <div class="frag-login" style="--d:0">
+                <header><b>Marham</b><span>Sign in</span></header>
+                <div class="frag-field">email · sana@…</div>
+                <div class="frag-field is-pass">••••••••</div>
+              </div>
+              <div class="frag-login" style="--d:1">
+                <header><b>Website CMS</b><span>Sign in</span></header>
+                <div class="frag-field">admin@clinic</div>
+                <div class="frag-field is-pass">••••••••</div>
+              </div>
+              <div class="frag-login" style="--d:2">
+                <header><b>POS Till</b><span>Sign in</span></header>
+                <div class="frag-field">counter-01</div>
+                <div class="frag-field is-pass">••••••••</div>
+              </div>
+              <div class="frag-login" style="--d:3">
+                <header><b>EMR</b><span>Sign in</span></header>
+                <div class="frag-field">dr.malik</div>
+                <div class="frag-field is-pass">••••••••</div>
+              </div>
+              <div class="frag-note">
+                <b>Reception sticky</b>
+                <p>Which login for Sana’s follow-up?<br>Share was 60%… or 40%?</p>
+              </div>
+            </div>
+            <p class="frag-caption">Staff become the integration</p>
+          </div>
+        </div>
+
+        <div class="compare-panel" data-compare-panel="with" hidden>
+          <div class="compare-copy">
+            <h3>One domain. One login. One database.</h3>
+            <p>A booking becomes an invoice, the invoice carries the doctor-share, the prescription lands in the patient’s portal — written once, used everywhere.</p>
+            <ul>
+              <li>Website &amp; CMS you edit yourself</li>
+              <li>Online booking with automatic reminders</li>
+              <li>Healthcare billing with doctor-share rules</li>
+              <li>Clinical notes and e-prescriptions</li>
+              <li>Patient, doctor, admin — and recruitment for hospitals</li>
+            </ul>
+          </div>
+          <div class="unify-stage" aria-hidden="true">
+            <div class="unify-shell">
+              <div class="unify-bar">
+                <strong>your-clinic.pk</strong>
+                <span>One login · one database</span>
+              </div>
+              <div class="unify-patient-strip">
+                <b>Sana Rafiq</b>
+                <span>MR-4821</span>
+                <em>Shared across every module</em>
+              </div>
+              <div class="unify-modules">
+                <div class="umod" style="--s:0"><b>Website</b><span>Self-edit CMS</span></div>
+                <div class="umod" style="--s:1"><b>Booking</b><span>Thu 11:30</span></div>
+                <div class="umod" style="--s:2"><b>Billing</b><span>PKR 4,000 · 60%</span></div>
+                <div class="umod" style="--s:3"><b>Clinical</b><span>e-Rx ready</span></div>
+                <div class="umod" style="--s:4"><b>Portals</b><span>4 doors</span></div>
+              </div>
+            </div>
+            <p class="frag-caption">Five jobs. One system.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MGW CONCEPT — big letter theater -->
+    <section class="section mgw-section" id="mgw" aria-labelledby="mgw-title">
+      <div class="section-head light">
+        <p class="eyebrow">02 · The solution</p>
+        <h2 id="mgw-title">Not a better website. A different category.</h2>
+        <p>Hospital-grade backbone. Website simplicity. So every practice in Pakistan competes on equal footing.</p>
+      </div>
+
+      <div class="letters" data-letters data-count="3">
+        <article class="letter-panel is-active" data-letter="M">
+          <span class="giant">M</span>
+          <div>
+            <h3>Medical</h3>
+            <p>Confidential patient data. Continuous records. Doctor-share billing. Reminders that catch missed follow-ups.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="G">
+          <span class="giant">G</span>
+          <div>
+            <h3>Grading</h3>
+            <p>Scored against Scoring Framework Parameters — so “medical-grade” is a measurement, not a marketing word.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="W">
+          <span class="giant">W</span>
+          <div>
+            <h3>Website</h3>
+            <p>One domain, one login structure, one front end. The website is the foundation — not an add-on.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PORTALS — door wall -->
+    <section class="section portals" id="portals" aria-labelledby="portals-title">
+      <div class="section-head portals-head">
+        <p class="eyebrow">03 · Four portals, one database</p>
+        <h2 id="portals-title">Everyone gets their own door.</h2>
+        <p>Patients, doctors, administrators and — for hospitals — applicants each sign in to a portal built for their job. Open a door below — the record behind them is the same.</p>
+      </div>
+
+      <div class="door-wall" data-doors data-reveal>
+        <div class="door-rail" role="tablist" aria-label="Open a portal" data-count="4">
+          <button class="door is-open" role="tab" aria-selected="true" data-door="patient">
+            <span class="door-num">01</span>
+            <span class="door-name">Patient</span>
+            <span class="door-hint">Records &amp; visits</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="doctor">
+            <span class="door-num">02</span>
+            <span class="door-name">Doctor</span>
+            <span class="door-hint">Schedule &amp; e-Rx</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="admin">
+            <span class="door-num">03</span>
+            <span class="door-name">Admin</span>
+            <span class="door-hint">CMS &amp; billing</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="recruit">
+            <span class="door-num">04</span>
+            <span class="door-name">Hire</span>
+            <span class="door-hint">Hospital variant</span>
+          </button>
+        </div>
+        <p class="door-thread" aria-hidden="true"><span></span> Shared patient record</p>
+
+        <div class="door-room is-active" role="tabpanel" data-room="patient">
+          <div class="chapter-copy">
+            <h3>Patients stop calling to ask for their own records.</h3>
+            <p>A secure login with everything from their visits in one place — and a reason to come back to your site between appointments.</p>
+            <ul>
+              <li>Appointments — history, upcoming visits and new requests</li>
+              <li>Records &amp; e-prescriptions — view and download any time</li>
+              <li>Health tracking — blood pressure, sugar and weight over time</li>
+              <li>Calculators &amp; diet planner — BMI, plus a nutrient database</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Patient portal</span><span>your-clinic.pk/portal</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Next visit</small><strong>Thu · 11:30</strong><span>Dr. Ayesha Malik · OPD 2</span></div>
+              <div class="tile"><small>Blood pressure · 8 wks</small><strong>128/82</strong><span class="ok">Trending down</span></div>
+              <div class="tile wide"><small>Documents</small>
+                <ul>
+                  <li>e-Prescription · 12 Nov <em>PDF</em></li>
+                  <li>Lab report · Lipid profile <em>PDF</em></li>
+                  <li>Invoice #2041 · PKR 4,000 <em class="ok">Paid</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="doctor" hidden>
+          <div class="chapter-copy">
+            <h3>The day’s list, the patient’s history, the prescription pad.</h3>
+            <p>Doctors see only their patients, write once, and the note flows into billing on one side and the patient portal on the other.</p>
+            <ul>
+              <li>Daily schedule — profile and availability set by the doctor</li>
+              <li>Assigned patients’ history — notes, results, past prescriptions</li>
+              <li>E-prescriptions &amp; clinical notes — written once, used everywhere</li>
+              <li>Digital archive — a tagged library for the doctor’s own research</li>
+              <li>Automated CV builder — Doctor Variant</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Doctor portal · Dr. Ayesha Malik</span><span>your-clinic.pk/doctor</span></div>
+            <div class="mock-stack">
+              <div class="tile"><small>Today · 14 patients</small>
+                <ul class="sched">
+                  <li><time>10:45</time> Imran Khalid <em>Done</em></li>
+                  <li class="now"><time>11:30</time> Sana Rafiq <em>In room</em></li>
+                  <li><time>11:45</time> Bilal Sheikh <em>Next</em></li>
+                </ul>
+              </div>
+              <div class="tile"><small>e-Prescription · Sana Rafiq</small>
+                <p><strong>Bisoprolol 2.5 mg</strong> 1+0+0 · 30 days</p>
+                <p><strong>Atorvastatin 10 mg</strong> 0+0+1 · 30 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="admin" hidden>
+          <div class="chapter-copy">
+            <h3>The control centre. Content, money and people in one panel.</h3>
+            <p>Edit the website yourself, set billing rules per doctor and service, and see collections by receptionist as they happen.</p>
+            <ul>
+              <li>Self-managed CMS — text, colours, fonts, banners, gallery, section order. Live in seconds.</li>
+              <li>Dynamic invoicing — OPD, ER and lab; packages, panels and discount slabs</li>
+              <li>Doctor-share — fixed, percentage or tiered, per doctor and per service</li>
+              <li>Users &amp; roles — who can see what, down to the receptionist</li>
+              <li>Reports — clinical, administrative and financial</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Admin portal</span><span>your-clinic.pk/admin</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Collections · this week</small><strong class="money" data-count="412800">PKR 0</strong></div>
+              <div class="tile"><small>Doctor-share rules</small><p>Dr. Malik · Consult 60%</p><p>Dr. Qureshi · Procedure Tiered</p></div>
+              <div class="tile wide"><small>Homepage sections · drag to reorder</small>
+                <div class="reorder"><span>Hero banner</span><span>Our doctors</span><span>Services &amp; packages</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="recruit" hidden>
+          <div class="chapter-copy">
+            <h3>Hire from your own website, not a job board.</h3>
+            <p>The Hospital Variant adds a recruitment portal: post openings on your domain, collect applications, and keep a talent pool you own.</p>
+            <ul>
+              <li>Job listings — published to your careers page</li>
+              <li>Online applications — straight into candidate records</li>
+              <li>CV bank — an open talent pool plus internal CV upload</li>
+              <li>Export — shortlists out to your HR team</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Recruitment portal</span><span>your-clinic.pk/careers</span></div>
+            <div class="mock-stack">
+              <div class="tile"><small>Open roles</small>
+                <ul>
+                  <li>Staff Nurse · ICU <em>14 applicants</em></li>
+                  <li>Medical Officer · ER <em>9 applicants</em></li>
+                  <li>Lab Technologist <em class="ok">New</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section class="proof" aria-label="Why practices choose MGW">
+      <div class="proof-item" data-reveal>
+        <strong>10</strong>
+        <span>days to go live</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>1</strong>
+        <span>domain you own</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>4</strong>
+        <span>portals, one record</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>24/7</strong>
+        <span>support included</span>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews-head">
+        <div class="section-head">
+          <p class="eyebrow">04 · In their words</p>
+          <h2 id="reviews-title">Video reviews are being recorded.</h2>
+          <p>We publish only verified accounts. On your demo call, you can speak with a practice already running on MGW.</p>
+        </div>
+        <div class="shorts-controls" data-shorts-controls>
+          <button type="button" class="shorts-btn" data-shorts-prev aria-label="Previous videos">‹</button>
+          <button type="button" class="shorts-btn" data-shorts-next aria-label="Next videos">›</button>
+        </div>
+      </div>
+      <div class="shorts-slider" data-shorts-slider data-reveal>
+        <div class="review-row" data-shorts-track tabindex="0" aria-label="Video reviews">
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Clinic director</figcaption>
+          </figure>
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Solo cardiologist</figcaption>
+          </figure>
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Hospital admin</figcaption>
+          </figure>
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Gynaecology practice</figcaption>
+          </figure>
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Dental clinic</figcaption>
+          </figure>
+          <figure class="short">
+            <div class="frame">
+              <span class="frame-play" aria-hidden="true"></span>
+              <span>Short · coming soon</span>
+            </div>
+            <figcaption>Paediatric practice</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-head">
+        <p class="eyebrow">05 · Pricing</p>
+        <h2 id="pricing-title">Three variants. One standard.</h2>
+        <p>One-time deployment, annual fee at half of setup, light usage charges. Taxes excluded.</p>
+      </div>
+
+      <div class="price-rail" data-reveal>
+        <article class="plan">
+          <h3>Doctor</h3>
+          <p class="for">Solo practitioners</p>
+          <p class="amount">PKR 20,000</p>
+          <p class="cadence">then 10,000 / year</p>
+          <ul>
+            <li>Site, domain &amp; CMS</li>
+            <li>Chatbot booking</li>
+            <li>E-Rx &amp; patient portal</li>
+            <li>CV builder</li>
+          </ul>
+          <a class="btn btn-ghost" href="#demo">Request a demo</a>
+        </article>
+        <article class="plan featured">
+          <p class="badge">Most practices</p>
+          <h3>Clinic</h3>
+          <p class="for">Multi-doctor clinics</p>
+          <p class="amount">PKR 30,000</p>
+          <p class="cadence">then 15,000 / year</p>
+          <ul>
+            <li>Patient, doctor, admin portals</li>
+            <li>Doctor-share billing</li>
+            <li>Continuity across doctors</li>
+            <li>Full reports</li>
+          </ul>
+          <a class="btn" href="#demo">Request a demo</a>
+        </article>
+        <article class="plan">
+          <h3>Hospital</h3>
+          <p class="for">Departments &amp; scale</p>
+          <p class="amount">PKR 50,000</p>
+          <p class="cadence">then 25,000 / year</p>
+          <ul>
+            <li>Everything in Clinic</li>
+            <li>Recruitment portal</li>
+            <li>CV bank</li>
+            <li>OPD, ER, lab invoicing</li>
+          </ul>
+          <a class="btn btn-ghost" href="#demo">Request a demo</a>
+        </article>
+      </div>
+
+      <div class="usage" data-reveal>
+        <div>
+          <h3>Estimate monthly usage</h3>
+          <p>PKR 1 / invoice · PKR 5 / e-prescription</p>
+        </div>
+        <div class="usage-controls">
+          <label>
+            <span>Invoices <em data-inv-out>600</em></span>
+            <input type="range" min="0" max="2000" step="50" value="600" data-inv />
+          </label>
+          <label>
+            <span>E-prescriptions <em data-rx-out>300</em></span>
+            <input type="range" min="0" max="1000" step="25" value="300" data-rx />
+          </label>
+          <p class="usage-total"><strong data-usage-total>PKR 2,100 / month</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-layout">
+        <div class="section-head">
+          <p class="eyebrow">06 · Questions</p>
+          <h2 id="faq-title">What doctors ask first.</h2>
+          <p>Straight answers before the call. Anything else — use the demo form below.</p>
+        </div>
+        <div class="faq-grid" data-faq>
+          <details open>
+            <summary><span>01</span> Do I need any technical knowledge?</summary>
+            <p>No. We build and configure everything, then hand over an admin panel designed for clinic staff. No technical expertise is required.</p>
+          </details>
+          <details>
+            <summary><span>02</span> What does the setup fee actually cover?</summary>
+            <p>We build the site, load your services, doctors and photographs, configure booking, connect your domain and train your staff. Hosting, SSL and backups sit in the annual fee.</p>
+          </details>
+          <details>
+            <summary><span>03</span> I already have a website. Can we move?</summary>
+            <p>Usually yes. We keep your domain, bring across what is worth keeping, and map any pages already ranking so you do not lose traffic.</p>
+          </details>
+          <details>
+            <summary><span>04</span> Who owns our patient data?</summary>
+            <p>You do. It is encrypted, separated per practice, and role-based access controls who inside your organisation can see what.</p>
+          </details>
+          <details>
+            <summary><span>05</span> How long does it take to go live?</summary>
+            <p>MGW goes live in 10 days. Our team handles the setup and trains your staff, so you do not need a developer of your own.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="demo" id="demo" aria-labelledby="demo-title">
+      <div class="demo-shell">
+        <div class="demo-copy">
+          <p class="eyebrow">07 · Request a demo</p>
+          <h2 id="demo-title">See your practice on MGW in one call.</h2>
+          <p>Share a few details about your practice. We will walk you through the portals for your variant and confirm clear pricing.</p>
+          <ul class="hero-facts">
+            <li>No payment required</li>
+            <li>No obligation</li>
+            <li>Clear pricing on the call</li>
+          </ul>
+          <div class="demo-contacts">
+            <a href="tel:+923033330023">+92 303 333 0023</a>
+            <a href="https://wa.me/923033330023" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="demo-form" data-demo-form>
+          <ol class="form-progress" data-progress aria-label="Form progress">
+            <li class="is-current" data-prog="1"><span>1</span> Practice type</li>
+            <li data-prog="2"><span>2</span> Your details</li>
+            <li data-prog="3"><span>3</span> Done</li>
+          </ol>
+          <p class="step-meta" data-step-meta>Step 1 of 3</p>
+
+          <div class="form-step is-active" data-step="1">
+            <p class="step-label">I am a…</p>
+            <p class="step-hint">Select your practice type to continue.</p>
+            <label class="choice"><input type="radio" name="variant" value="Doctor" required /><span><strong>Doctor</strong> Solo practitioner · Doctor Variant · PKR 20,000</span></label>
+            <label class="choice"><input type="radio" name="variant" value="Clinic" /><span><strong>Clinic</strong> Multi-doctor front desk · Clinic Variant · PKR 30,000</span></label>
+            <label class="choice"><input type="radio" name="variant" value="Hospital" /><span><strong>Hospital</strong> Departments &amp; hiring · Hospital Variant · PKR 50,000</span></label>
+          </div>
+          <div class="form-step" data-step="2" hidden>
+            <p class="step-label">Where should we reach you?</p>
+            <label>Your name *<input type="text" name="name" required autocomplete="name" /></label>
+            <label>Phone number *<input type="tel" name="phone" required autocomplete="tel" /></label>
+            <div class="form-row">
+              <label><span>City <span class="opt">(optional)</span></span><input type="text" name="city" /></label>
+              <label><span>Email <span class="opt">(optional)</span></span><input type="email" name="email" /></label>
+            </div>
+            <div class="demo-actions">
+              <button type="button" class="btn btn-ghost" data-back>Back</button>
+              <button type="submit" class="btn">Submit request</button>
+            </div>
+          </div>
+          <div class="form-success" data-success hidden>
+            <h3>Request received, <span data-success-name>Doctor</span>.</h3>
+            <p>Our team will contact you within one working day to schedule a convenient time. There is no payment and no commitment required.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="careers">
+      <h2>Become a medical grade web developer</h2>
+      <p>Join a team of innovators, problem-solvers and technology enthusiasts working together to transform healthcare.</p>
+      <a href="/careers">Join the D-Right team</a>
+    </section>
+  
+  </main>
+</BaseLayout>

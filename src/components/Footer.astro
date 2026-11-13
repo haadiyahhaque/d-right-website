@@ -1,0 +1,126 @@
+---
+interface Props {
+  variant?: "home" | "mgw";
+}
+
+const { variant = "home" } = Astro.props;
+const isHome = variant === "home";
+---
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <a class="brand" href="/">
+        <img
+          class="brand-logo"
+          src="/assets/d-right-logo.png"
+          alt="D-Right Technologies"
+          width="168"
+          height="48"
+        />
+      </a>
+      {
+        isHome ? (
+          <p>Healthcare software for doctors, clinics, hospitals and labs in Pakistan.</p>
+        ) : (
+          <p>
+            Healthcare technology for doctors, clinics and hospitals in Pakistan — websites, labs and
+            clinical AI.
+          </p>
+        )
+      }
+    </div>
+    {
+      isHome ? (
+        <div class="footer-cols footer-cols-home">
+          <div>
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="/solutions/mgw">ClinTa Web Builder</a></li>
+              <li><a href="/solutions/laris">LARIS</a></li>
+              <li><a href="/solutions/intelligist">IntelliSist</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:info@dright.net">info@dright.net</a></li>
+              <li><a href="tel:+923033330023">+92 303 333 0023</a></li>
+              <li>
+                <a href="https://wa.me/923033330023" target="_blank" rel="noopener">WhatsApp</a>
+              </li>
+              <li>Islamabad, Pakistan</li>
+            </ul>
+          </div>
+        </div>
+      ) : (
+        <div class="footer-cols">
+          <div>
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="/solutions/mgw">MGW</a></li>
+              <li><a href="/solutions/laris">LARIS</a></li>
+              <li><a href="/solutions/intelligist">IntelliSist</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/resources/blog">Blog</a></li>
+              <li><a href="/resources/faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:info@dright.net">info@dright.net</a></li>
+              <li><a href="tel:+923033330023">+92 303 333 0023</a></li>
+              <li>
+                <a href="https://wa.me/923033330023" target="_blank" rel="noopener">WhatsApp</a>
+              </li>
+              <li><a href="#demo">Request a demo</a></li>
+            </ul>
+          </div>
+        </div>
+      )
+    }
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year>2026</span> D-Right Technologies</p>
+    <p>
+      {
+        isHome ? (
+          <>
+            <a href="/privacy">Privacy Policy</a>
+            {" · "}
+            <a href="/terms">Terms</a>
+          </>
+        ) : (
+          <>
+            <a href="/privacy">Privacy</a>
+            {" · "}
+            <a href="/terms">Terms</a>
+          </>
+        )
+      }
+    </p>
+  </div>
+</footer>

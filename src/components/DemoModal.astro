@@ -1,0 +1,72 @@
+---
+---
+
+<div class="demo-modal" data-demo-modal hidden>
+  <div class="demo-modal-backdrop" data-demo-close tabindex="-1"></div>
+  <div
+    class="demo-modal-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="demo-modal-title"
+    data-demo-dialog
+  >
+    <button type="button" class="demo-modal-close" data-demo-close aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <div class="demo-modal-head">
+      <p class="eyebrow">Request a demo</p>
+      <h2 id="demo-modal-title">See which solution fits.</h2>
+      <p>Pick a product, share your details, and we’ll schedule a short walkthrough.</p>
+    </div>
+
+    <form class="demo-form demo-modal-form" data-demo-form data-demo-modal-form>
+      <ol class="form-progress" data-progress aria-label="Form progress">
+        <li class="is-current" data-prog="1"><span>1</span> Product</li>
+        <li data-prog="2"><span>2</span> Your details</li>
+        <li data-prog="3"><span>3</span> Done</li>
+      </ol>
+      <p class="step-meta" data-step-meta>Step 1 of 3</p>
+
+      <div class="form-step is-active" data-step="1">
+        <p class="step-label">I’m interested in…</p>
+        <p class="step-hint">Select a product to continue.</p>
+        <label class="choice">
+          <input type="radio" name="variant" value="MGW" required />
+          <span><strong>MGW</strong> Medical Grade Website · doctors, clinics &amp; hospitals</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="variant" value="LARIS" />
+          <span><strong>LARIS</strong> Laboratory ERP · pathology &amp; diagnostic labs</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="variant" value="IntelliSist" />
+          <span><strong>IntelliSist</strong> AI clinical assistant · documentation &amp; support</span>
+        </label>
+      </div>
+
+      <div class="form-step" data-step="2" hidden>
+        <p class="step-label">Where should we reach you?</p>
+        <label>Your name *<input type="text" name="name" required autocomplete="name" /></label>
+        <label>Phone number *<input type="tel" name="phone" required autocomplete="tel" /></label>
+        <div class="form-row">
+          <label><span>City <span class="opt">(optional)</span></span><input type="text" name="city" /></label>
+          <label><span>Email <span class="opt">(optional)</span></span><input type="email" name="email" /></label>
+        </div>
+        <div class="demo-actions">
+          <button type="button" class="btn btn-ghost" data-back>Back</button>
+          <button type="submit" class="btn">Submit request</button>
+        </div>
+      </div>
+
+      <div class="form-success" data-success hidden>
+        <h3>Request received, <span data-success-name>there</span>.</h3>
+        <p>
+          We’ll message you on WhatsApp within one working day to pick a time. Nothing to pay, nothing to
+          sign.
+        </p>
+        <button type="button" class="btn" data-demo-close>Close</button>
+      </div>
+    </form>
+  </div>
+</div>

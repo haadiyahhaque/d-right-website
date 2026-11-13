@@ -1,0 +1,435 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="D-Right Technologies — Healthcare software for Pakistan"
+  description="D-Right builds the website platform, laboratory system, and AI assistant that doctors, clinics, and hospitals in Pakistan need to work faster and look more professional."
+  bodyClass="page-home"
+  active="home"
+  demoLabel="Book a demo"
+  demoModal={true}
+  footerVariant="home"
+>
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="home-hero" id="top" aria-labelledby="home-title">
+      <div class="home-hero-bg" aria-hidden="true">
+        <div class="home-hero-wash"></div>
+        <p class="home-hero-mark">D-RIGHT</p>
+      </div>
+
+      <div class="home-hero-copy">
+        <p class="hero-kicker">D-Right Technologies</p>
+        <h1 id="home-title">Healthcare runs better on solutions built for it.</h1>
+        <p class="hero-lead">
+          From medical-grade websites to laboratory management and AI clinical support, D-RIGHT gives healthcare providers in Pakistan the tools to work faster and stand out with confidence.
+        </p>
+        <div class="hero-cta">
+          <button type="button" class="btn" data-demo-open>Book a demo</button>
+          <a class="btn btn-ghost" href="https://wa.me/923033330023" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+        <ul class="hero-facts home-hero-facts">
+          <li>Secure patient data</li>
+          <li>Local support</li>
+          <li>Medical-grade standards</li>
+        </ul>
+      </div>
+
+      <div class="home-orbit" aria-label="MGW, LARIS and IntelliSist" data-reveal>
+        <div class="ho-window ho-mgw">
+          <div class="ho-chrome">
+            <i></i><i></i><i></i>
+            <em>MGW · your-clinic.pk</em>
+          </div>
+          <div class="ho-mgw-body">
+            <div class="ho-kpis">
+              <div><b>18</b><span>appts</span></div>
+              <div><b>46.5k</b><span>PKR</span></div>
+              <div><b>11</b><span>e-Rx</span></div>
+            </div>
+            <p class="ho-doc">Dr. Ayesha Malik · Today</p>
+            <ul>
+              <li><time>11:30</time><strong>Sana Rafiq</strong><em>In room</em></li>
+              <li><time>11:45</time><strong>Bilal Sheikh</strong><em class="next">Next</em></li>
+            </ul>
+            <div class="ho-mgw-trail">
+              <div class="ho-rx">
+                <small>e-Prescription</small>
+                <b>Bisoprolol 2.5 mg</b>
+              </div>
+              <div class="ho-inv">
+                <small>Invoice · share</small>
+                <b>PKR 4,000</b>
+                <span>60% / 40%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ho-window ho-laris">
+          <div class="ho-chrome">
+            <i></i><i></i><i></i>
+            <em>LARIS · Lab ERP</em>
+          </div>
+          <div class="ho-laris-body">
+            <div class="ho-laris-role">
+              <span>Reception</span>
+              <em>Live</em>
+            </div>
+            <div class="ho-laris-kpis">
+              <div><b>126</b><span>Registered</span></div>
+              <div><b>9</b><span>Waiting</span></div>
+              <div><b>4</b><span>Unpaid</span></div>
+            </div>
+            <div class="ho-laris-pipe">
+              <span class="done">Reg</span>
+              <span class="done">Collect</span>
+              <span class="on">Test</span>
+              <span>Review</span>
+            </div>
+            <div class="ho-laris-job">
+              <em>#40217</em>
+              <span>Test processing</span>
+              <b>Live</b>
+            </div>
+            <p class="ho-laris-auth">Stock · accounts linked</p>
+          </div>
+        </div>
+
+        <div class="ho-window ho-ai">
+          <div class="ho-chrome">
+            <i></i><i></i><i></i>
+            <em>IntelliSist</em>
+          </div>
+          <div class="ho-ai-body">
+            <div class="ho-ai-meta">
+              <span>Follow-up visit</span>
+              <span class="live">Voice</span>
+            </div>
+            <div class="ho-ai-listen">
+              <span class="ho-mic" aria-hidden="true"></span>
+              <span class="ho-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <strong>Listening</strong>
+            </div>
+            <div class="ho-ai-note">
+              <small>Draft note</small>
+              <div class="ho-ai-skel">
+                <div><em>Hx</em><b></b></div>
+                <div><em>Exam</em><b class="mid"></b></div>
+                <div><em>Plan</em><b class="short"></b></div>
+              </div>
+            </div>
+            <p class="ho-ai-auth">Physician decides</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Who it’s for -->
+    <section class="section home-audience" id="audience" aria-labelledby="audience-title">
+      <div class="section-head home-audience-head">
+        <p class="eyebrow">Who it’s for</p>
+        <h2 id="audience-title">Built for the way you practice</h2>
+        <p class="audience-lead">Solutions shaped around care — for doctors, clinics, hospitals and laboratories.</p>
+      </div>
+      <div class="audience-grid" data-reveal>
+        <article class="audience-card" style="--i:0">
+          <span class="audience-num">01</span>
+          <h3>Doctors</h3>
+          <p>A stronger online presence, with less of the day lost to paperwork.</p>
+        </article>
+        <article class="audience-card" style="--i:1">
+          <span class="audience-num">02</span>
+          <h3>Clinics</h3>
+          <p>A professional front door online, and a smoother day at the desk.</p>
+        </article>
+        <article class="audience-card" style="--i:2">
+          <span class="audience-num">03</span>
+          <h3>Hospitals</h3>
+          <p>Departments linked on one record, so handoffs stay clear.</p>
+        </article>
+        <article class="audience-card" style="--i:3">
+          <span class="audience-num">04</span>
+          <h3>Laboratories</h3>
+          <p>Orders, stock, billing and reports running as one lab ERP.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Solutions -->
+    <section class="section home-products" id="solutions" aria-labelledby="solutions-title">
+      <div class="section-head">
+        <p class="eyebrow">Solutions</p>
+        <h2 id="solutions-title">Three solutions. One standard of care.</h2>
+        <p>MGW, LARIS and IntelliSist — each built for a real healthcare job, under one medical-grade standard.</p>
+      </div>
+
+      <div class="product-cards" data-reveal>
+        <article class="po-card" style="--i:0">
+          <div class="po-mock po-mgw" aria-hidden="true">
+            <div class="pm-chrome soft"><em>MGW · your-clinic.pk</em><b>Live</b></div>
+            <div class="pm-mgw-shell">
+              <div class="pm-mgw-meta">
+                <span>Sana Rafiq · MR-4821</span>
+                <span class="on">Doctor</span>
+              </div>
+              <div class="pm-mgw-kpis">
+                <div><b>18</b><small>appts</small></div>
+                <div><b>11</b><small>e-Rx</small></div>
+                <div><b>4k</b><small>PKR</small></div>
+              </div>
+              <div class="pm-mgw-list">
+                <div class="hot"><time>11:30</time><span>Sana Rafiq</span><em>In room</em></div>
+                <div><time>11:45</time><span>Bilal Sheikh</span><em class="next">Next</em></div>
+              </div>
+              <p class="pm-mgw-foot">Invoice · doctor share 60%</p>
+            </div>
+          </div>
+          <div class="po-copy">
+            <p class="po-kind">01 · Website platform</p>
+            <h3>MGW</h3>
+            <p class="po-line">A medical-grade website, without the hassle.</p>
+            <p>Patient, doctor, admin and hire portals on one domain you own.</p>
+            <a class="product-link" href="/solutions/mgw">Learn more →</a>
+          </div>
+        </article>
+
+        <article class="po-card" style="--i:1">
+          <div class="po-mock po-laris" aria-hidden="true">
+            <div class="pm-chrome soft"><em>LARIS · Lab ERP</em><b>Live</b></div>
+            <div class="pm-laris-shell">
+              <div class="pm-laris-roles">
+                <span class="on">Reception</span>
+                <span>Collect</span>
+                <span>Tech</span>
+                <span>Path</span>
+              </div>
+              <div class="pm-laris-kpis">
+                <div><b>126</b><small>Registered</small></div>
+                <div><b>63</b><small>Processing</small></div>
+                <div><b>31</b><small>Awaiting review</small></div>
+              </div>
+              <div class="pm-laris-queue">
+                <div class="hot"><em>#40217</em><span>Test processing</span><b>Live</b></div>
+                <div><em>#40220</em><span>Sent for review</span><b class="wait">Queue</b></div>
+              </div>
+              <div class="pm-laris-foot">
+                <span>Stock · 7 low</span>
+                <span>Billed · PKR 2.1M</span>
+              </div>
+            </div>
+          </div>
+          <div class="po-copy">
+            <p class="po-kind">02 · Lab ERP</p>
+            <h3>LARIS</h3>
+            <p class="po-line">Run your laboratory with confidence.</p>
+            <p>Orders, inventory, billing, tests and reports in one lab ERP.</p>
+            <a class="product-link" href="/solutions/laris">Learn more →</a>
+          </div>
+        </article>
+
+        <article class="po-card" style="--i:2">
+          <div class="po-mock po-ai" aria-hidden="true">
+            <div class="pm-chrome soft"><em>IntelliSist</em><b>Live</b></div>
+            <div class="pm-ai-shell">
+              <div class="pm-ai-meta">
+                <span>Patient · Follow-up</span>
+                <span>Mode · Voice + text</span>
+              </div>
+              <div class="pm-ai-listen">
+                <span class="pm-mic" aria-hidden="true"></span>
+                <span class="pm-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <div>
+                  <strong>Voice capture</strong>
+                  <small>Structuring clinical note…</small>
+                </div>
+              </div>
+              <div class="pm-ai-note">
+                <div class="pm-ai-line"><span>Hx</span><b></b><i class="cursor"></i></div>
+                <div class="pm-ai-line"><span>Exam</span><b class="mid"></b></div>
+                <div class="pm-ai-line"><span>Plan</span><b class="short"></b></div>
+              </div>
+              <p class="pm-ai-auth">Physician decides</p>
+            </div>
+          </div>
+          <div class="po-copy">
+            <p class="po-kind">03 · AI clinical assistant</p>
+            <h3>IntelliSist</h3>
+            <p class="po-line">An AI clinical assistant for everyday care.</p>
+            <p>Decision support and faster documentation — judgment stays yours.</p>
+            <a class="product-link" href="/solutions/intelligist">Learn more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Why D-RIGHT -->
+    <section class="section home-why" aria-labelledby="why-title">
+      <div class="why-billboard" data-reveal>
+        <header class="why-billboard-head">
+          <p class="eyebrow">Why D-RIGHT</p>
+          <h2 id="why-title">Why healthcare teams choose us</h2>
+          <p>Healthcare-first design, a measurable standard, and privacy treated as part of the product.</p>
+        </header>
+        <div class="why-billboard-list">
+          <article class="why-point" style="--i:0">
+            <p class="why-point-num">01</p>
+            <h3>Built for healthcare, not adapted to it</h3>
+            <p>Every solution is designed around real clinical and lab workflows.</p>
+          </article>
+          <article class="why-point" style="--i:1">
+            <p class="why-point-num">02</p>
+            <h3>A measurable standard</h3>
+            <p>Our Medical Grade framework scores security, portals, usability, and content — so quality isn’t just a claim.</p>
+          </article>
+          <article class="why-point" style="--i:2">
+            <p class="why-point-num">03</p>
+            <h3>Security and privacy first</h3>
+            <p>Patient and operational data is handled with care. <a href="/privacy">Read our privacy policy</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Proof — client & clinician reviews -->
+    <section class="section home-proof" id="proof" aria-labelledby="proof-title">
+      <div class="proof-head">
+        <div class="section-head home-proof-head">
+          <p class="eyebrow">Proof</p>
+          <h2 id="proof-title">In their words</h2>
+          <p>Clinicians and practices on MGW, LARIS and IntelliSist — how the solutions show up in real care.</p>
+        </div>
+        <div class="proof-controls" data-proof-controls>
+          <button type="button" class="proof-btn" data-proof-prev aria-label="Previous reviews">‹</button>
+          <button type="button" class="proof-btn" data-proof-next aria-label="Next reviews">›</button>
+        </div>
+      </div>
+      <div class="proof-slider" data-proof-slider data-reveal>
+        <div class="proof-track" data-proof-track tabindex="0" aria-label="Client and clinician reviews">
+          <article class="proof-card">
+            <p class="proof-product">MGW</p>
+            <blockquote>
+              <p>Our patients find us on our own domain, book online, and the same record carries into billing and follow-up. We stopped stitching a brochure site to a separate till.</p>
+            </blockquote>
+            <footer>
+              <strong>Best Gastro Liver Clinic</strong>
+              <span>Gastroenterology</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">MGW</p>
+            <blockquote>
+              <p>Having the website, schedule and e-prescriptions under one login changed how the day runs. Doctor-share and the patient portal stay linked to the visit — not in a notebook.</p>
+            </blockquote>
+            <footer>
+              <strong>Dr Ahmad Tanveer</strong>
+              <span>Cardiology</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">MGW</p>
+            <blockquote>
+              <p>The practice looks professional online and the front desk works from the same system. One domain we own — not a rented listing beside competitors.</p>
+            </blockquote>
+            <footer>
+              <strong>Dental Specialists</strong>
+              <span>Dentistry</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">LARIS</p>
+            <blockquote>
+              <p>LARIS tied registration, samples, results and billing to one record. The lab moves as one workflow now — fewer handoff gaps and clearer stock and accounts day to day.</p>
+            </blockquote>
+            <footer>
+              <strong>Dr. Tanzeel</strong>
+              <span>Laboratory</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">IntelliSist</p>
+            <blockquote>
+              <p>IntelliSist turns clinical conversations into structured notes, so documentation feels less separate and I stay with the patient instead of switching between listening and writing.</p>
+            </blockquote>
+            <footer>
+              <strong>Dr. Salman Akhtar</strong>
+              <span>Cardiology</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">IntelliSist</p>
+            <blockquote>
+              <p>Consults need attention and careful notes. IntelliSist helps organize documentation so more of the visit stays a real conversation with the patient.</p>
+            </blockquote>
+            <footer>
+              <strong>Dr. Ammara Pirzada</strong>
+              <span>Gynecology</span>
+            </footer>
+          </article>
+          <article class="proof-card">
+            <p class="proof-product">IntelliSist</p>
+            <blockquote>
+              <p>In paediatrics, medication safety comes first. IntelliSist helps flag medication-related concerns before they become problems.</p>
+            </blockquote>
+            <footer>
+              <strong>Dr. Zameer Nayyar</strong>
+              <span>Pediatrician</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. About -->
+    <section class="section home-about" aria-labelledby="about-title">
+      <div class="home-about-panel" data-reveal>
+        <div class="home-about-main">
+          <p class="eyebrow">About D-RIGHT</p>
+          <h2 id="about-title">Technology that respects the work of care</h2>
+          <p class="home-about-copy">
+            D-RIGHT Technologies builds software for healthcare from Islamabad, in collaboration with ClinTa Healthcare, USA. Good tools should make care simpler, safer, and more accessible — for a single clinic as much as for a hospital or lab.
+          </p>
+          <a class="product-link" href="/about">Meet the team →</a>
+        </div>
+        <dl class="home-about-facts" aria-label="Company facts">
+          <div>
+            <dt>Based in</dt>
+            <dd>Islamabad</dd>
+          </div>
+          <div>
+            <dt>In collaboration with</dt>
+            <dd>ClinTa Healthcare, USA</dd>
+          </div>
+          <div>
+            <dt>Built for</dt>
+            <dd>Doctors, clinics, hospitals &amp; labs</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 7. Final CTA -->
+    <section class="home-cta-band" aria-labelledby="cta-title">
+      <div class="home-cta-shell" data-reveal>
+        <div class="home-cta-row">
+          <div class="home-cta-inner">
+            <p class="eyebrow home-cta-eye">Next step</p>
+            <h2 id="cta-title">See which solution fits your practice.</h2>
+            <p>Book a free 20-minute demo. No commitment.</p>
+          </div>
+          <div class="home-cta-actions">
+            <button type="button" class="btn" data-demo-open>Book a demo</button>
+            <a class="btn btn-ghost" href="https://wa.me/923033330023" target="_blank" rel="noopener">WhatsApp us</a>
+          </div>
+        </div>
+        <div class="home-cta-orbit" aria-hidden="true">
+          <span>MGW</span>
+          <span>LARIS</span>
+          <span>IntelliSist</span>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+</BaseLayout>

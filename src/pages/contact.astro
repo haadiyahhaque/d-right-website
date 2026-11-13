@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact — D-Right Technologies"
+  description="Contact D-Right Technologies. Email info@dright.net, call +92 303 333 0023. Civic Center, Bahria Town, Rawalpindi."
+  bodyClass="page-contact"
+  active="contact"
+  demoHref="/solutions/mgw#demo"
+  demoLabel="Book a demo"
+  footerVariant="home"
+>
+  <main id="main">
+    <section class="section contact-hero" aria-labelledby="contact-title">
+      <div class="contact-hero-inner" data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-title">Talk to the D-Right team</h1>
+        <p class="contact-lead">
+          Questions about MGW, LARIS, IntelliSist or partnerships — write to us or call. Visit us at
+          Civic Center, Bahria Town.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact-main" aria-labelledby="contact-details-title">
+      <div class="contact-layout" data-reveal>
+        <aside class="contact-aside" aria-labelledby="contact-details-title">
+          <h2 id="contact-details-title">Get in touch</h2>
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:info@dright.net">info@dright.net</a>
+              </dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd>
+                <a href="tel:+923033330023">+92 303 333 0023</a>
+                <a
+                  class="contact-wa"
+                  href="https://wa.me/923033330023"
+                  target="_blank"
+                  rel="noopener"
+                  >Chat on WhatsApp →</a
+                >
+              </dd>
+            </div>
+          </dl>
+
+          <div class="contact-map-block">
+            <p class="contact-map-label">Office</p>
+            <div class="contact-map">
+              <iframe
+                title="D-Right office — Civic Center Bahria Town, Rawalpindi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.118669878414!2d73.12137967479066!3d33.55029294406885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed04d81818a1%3A0xecfa8857f30563f7!2sCivic%20Center%20Bahria%20Town%20Civic%20Center%20Bahria%20Town%2C%20Rawalpindi%2C%20Pakistan!5e0!3m2!1sen!2sau!4v1794564941343!5m2!1sen!2sau"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </aside>
+
+        <form class="contact-form" data-contact-form>
+          <p class="contact-form-label">Send a message</p>
+          <div class="contact-form-grid">
+            <label>
+              <span class="contact-field-label">Full name *</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span class="contact-field-label">Email *</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              <span class="contact-field-label">Phone <span class="opt">(optional)</span></span>
+              <input type="tel" name="phone" autocomplete="tel" />
+            </label>
+            <label>
+              <span class="contact-field-label">Subject *</span>
+              <input type="text" name="subject" required placeholder="How can we help?" />
+            </label>
+            <label class="contact-span-2">
+              <span class="contact-field-label">Message *</span>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell us a little about your practice or request"></textarea>
+            </label>
+          </div>
+          <div class="contact-form-footer">
+            <p class="contact-form-aside">We’ll reply within one working day.</p>
+            <button type="submit" class="btn contact-submit-btn">Send message</button>
+            <p class="contact-form-success" data-contact-success hidden>
+              Thanks — your message was received. We’ll be in touch shortly.
+            </p>
+            <p class="contact-form-error" data-contact-error hidden></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

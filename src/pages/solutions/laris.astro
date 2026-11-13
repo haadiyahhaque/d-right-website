@@ -1,0 +1,829 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="LARIS · Laboratory ERP — D-Right Technologies"
+  description="ClinTa LARIS unifies your laboratory from specimen collection to final report across 10 specialised role dashboards, with seamless integration into ClinTa Extended."
+  active="laris"
+  demoHref="#demo"
+  demoLabel="Request a demo"
+  footerVariant="mgw"
+>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-wash"></div>
+        <p class="hero-watermark">LARIS</p>
+      </div>
+
+      <div class="hero-top">
+        <p class="hero-kicker">Laboratory ERP · by D-Right</p>
+        <h1 id="hero-title">Transforming laboratory operations into a digitally controlled enterprise.</h1>
+        <p class="hero-lead">
+          ClinTa LARIS unifies your entire laboratory, from specimen collection to final report, across 10
+          specialised role dashboards, with seamless integration into ClinTa Extended.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#demo">Request a demo</a>
+          <a class="btn btn-ghost" href="https://wa.me/923033330023" target="_blank" rel="noopener"
+            >Contact on WhatsApp</a
+          >
+        </div>
+        <ul class="hero-facts">
+          <li>10 role dashboards</li>
+          <li>One patient record</li>
+          <li>Standalone or with Extended</li>
+        </ul>
+      </div>
+
+      <div class="hero-orbit" aria-label="Live LARIS preview" data-orbit>
+        <div class="orbit-phone" data-hero-stage>
+          <div class="phone-bezel">
+            <div class="phone-notch"></div>
+            <div class="phone-ui">
+              <div class="phone-bar">
+                <span>LARIS · Sample track</span>
+                <strong>Live</strong>
+              </div>
+              <div class="stat-row">
+                <div><b>42</b>samples</div>
+                <div><b>18</b>pending</div>
+                <div><b>6</b>critical</div>
+              </div>
+              <p class="ui-label">Accession · ACC-1184</p>
+              <ul class="appt-list">
+                <li class="appt is-new">
+                  <time>09:12</time>
+                  <div><strong>Collected</strong><span>Phlebotomy · Tube A</span></div>
+                  <em>New</em>
+                </li>
+                <li class="appt">
+                  <time>09:40</time>
+                  <div><strong>In analysis</strong><span>Technologist · CBC</span></div>
+                  <em class="warn">Running</em>
+                </li>
+                <li class="appt">
+                  <time>10:05</time>
+                  <div><strong>Verified</strong><span>Pathologist · Released</span></div>
+                  <em class="ok">Done</em>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <aside class="orbit-rx" aria-hidden="true">
+          <p class="orbit-tag">Report · Lipid profile</p>
+          <p><strong>Cholesterol</strong><span>198 mg/dL</span></p>
+          <p><strong>LDL</strong><span>112 mg/dL</span></p>
+          <em>Verified · patient portal</em>
+        </aside>
+
+        <aside class="orbit-invoice" aria-hidden="true">
+          <p class="orbit-tag">Invoice #LAB-902</p>
+          <p>CBC panel <b>1,800</b></p>
+          <p>Lipid profile <b>2,200</b></p>
+          <div class="invoice-total">
+            <span>Total PKR</span>
+            <strong>4,000</strong>
+          </div>
+          <div class="share-row">
+            <span>Cash</span>
+            <span>Paid</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROBLEM — 6 points -->
+    <section class="section problem" id="problem" aria-labelledby="problem-title">
+      <div class="section-head">
+        <p class="eyebrow">01 · The problem</p>
+        <h2 id="problem-title">A lab is only as fast as its slowest handoff.</h2>
+        <p>
+          When reception, collection, testing, reporting, stores and accounts each keep their own
+          records, every sample is retyped, chased and checked again.
+        </p>
+      </div>
+
+      <div class="chaos" data-count="6" data-reveal>
+        <article class="chaos-item" style="--i:0">
+          <h3>Typed at every desk</h3>
+          <span>The same patient details entered again at each step.</span>
+        </article>
+        <article class="chaos-item" style="--i:1">
+          <h3>Samples chased by phone</h3>
+          <span>Nobody can see where a sample is without calling round.</span>
+        </article>
+        <article class="chaos-item" style="--i:2">
+          <h3>Results entered by hand</h3>
+          <span>Values copied from analyser printouts into reports.</span>
+        </article>
+        <article class="chaos-item" style="--i:3">
+          <h3>Report changes untracked</h3>
+          <span>Edits after release leave no amendment history.</span>
+        </article>
+        <article class="chaos-item" style="--i:4">
+          <h3>Stock counted at month end</h3>
+          <span>Reagents run out before anyone notices.</span>
+        </article>
+        <article class="chaos-item" style="--i:5">
+          <h3>Tests missing from bills</h3>
+          <span>Work done in the lab never reaches the invoice.</span>
+        </article>
+      </div>
+
+      <div class="compare" data-reveal data-compare>
+        <div class="compare-head">
+          <button type="button" class="compare-tab is-active" data-compare-tab="without" aria-pressed="true"
+            >Without LARIS</button
+          >
+          <button type="button" class="compare-tab" data-compare-tab="with" aria-pressed="false"
+            >With LARIS</button
+          >
+        </div>
+
+        <div class="compare-panel is-active" data-compare-panel="without">
+          <div class="compare-copy">
+            <h3>Separate desks. No shared thread.</h3>
+            <p>
+              Reception, collection, testing, reporting, stores and accounts each keep their own books.
+              Staff become the integration.
+            </p>
+            <ul>
+              <li>Typed at every desk</li>
+              <li>Samples chased by phone</li>
+              <li>Results entered by hand</li>
+              <li>Report changes untracked</li>
+              <li>Stock counted at month end</li>
+              <li>Tests missing from bills</li>
+            </ul>
+          </div>
+          <div class="fragment-stage" aria-hidden="true">
+            <div class="frag-desk">
+              <div class="frag-login" style="--d:0">
+                <header><b>Reception</b><span>Register</span></header>
+                <div class="frag-field">patient · …</div>
+                <div class="frag-field is-pass">invoice?</div>
+              </div>
+              <div class="frag-login" style="--d:1">
+                <header><b>Collection</b><span>Log</span></header>
+                <div class="frag-field">tube ID</div>
+                <div class="frag-field is-pass">where?</div>
+              </div>
+              <div class="frag-login" style="--d:2">
+                <header><b>Lab bench</b><span>Results</span></header>
+                <div class="frag-field">printout</div>
+                <div class="frag-field is-pass">retype</div>
+              </div>
+              <div class="frag-login" style="--d:3">
+                <header><b>Accounts</b><span>Bill</span></header>
+                <div class="frag-field">which tests?</div>
+                <div class="frag-field is-pass">missing</div>
+              </div>
+              <div class="frag-note">
+                <b>Desk sticky</b>
+                <p>Where is ACC-1184?<br />Was lipid billed?</p>
+              </div>
+            </div>
+            <p class="frag-caption">Staff become the integration</p>
+          </div>
+        </div>
+
+        <div class="compare-panel" data-compare-panel="with" hidden>
+          <div class="compare-copy">
+            <h3>Every desk on one connected workflow.</h3>
+            <p>
+              A patient is registered once, the sample is tracked through every step, and the verified
+              report reaches the patient online — with billing and stock kept in step.
+            </p>
+            <ul>
+              <li>Reception &amp; billing</li>
+              <li>Collection &amp; testing</li>
+              <li>Verification</li>
+              <li>Reports &amp; portal</li>
+              <li>Store &amp; accounts</li>
+              <li>Admin dashboards · ten roles, one record</li>
+            </ul>
+          </div>
+          <div class="unify-stage" aria-hidden="true">
+            <div class="unify-shell">
+              <div class="unify-bar">
+                <strong>ClinTa LARIS</strong>
+                <span>Ten role dashboards on one patient record</span>
+              </div>
+              <div class="unify-patient-strip">
+                <b>ACC-1184</b>
+                <span>MR-4821</span>
+                <em>Shared across every module</em>
+              </div>
+              <div class="unify-modules">
+                <div class="umod" style="--s:0"><b>Reception</b><span>Invoiced</span></div>
+                <div class="umod" style="--s:1"><b>Collection</b><span>Barcoded</span></div>
+                <div class="umod" style="--s:2"><b>Analysis</b><span>CBC · Lipid</span></div>
+                <div class="umod" style="--s:3"><b>Verify</b><span>Released</span></div>
+                <div class="umod" style="--s:4"><b>Portal</b><span>Patient PDF</span></div>
+              </div>
+            </div>
+            <p class="frag-caption">One sample. One workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION — LARIS -->
+    <section class="section mgw-section" id="solution" aria-labelledby="solution-title">
+      <div class="section-head light">
+        <p class="eyebrow">02 · The solution</p>
+        <h2 id="solution-title">One platform, every department connected.</h2>
+        <p>
+          One system for laboratory operations, patient services, HR, inventory, procurement, finance
+          and business intelligence.
+        </p>
+      </div>
+
+      <div class="letters" data-letters data-count="5">
+        <article class="letter-panel is-active" data-letter="L">
+          <span class="giant">L</span>
+          <div>
+            <h3>Lab</h3>
+            <p>Built for laboratory operations — from specimen collection to the verified report.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="A">
+          <span class="giant">A</span>
+          <div>
+            <h3>Advancements</h3>
+            <p>Digital workflows that keep every desk connected on one patient record.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="R">
+          <span class="giant">R</span>
+          <div>
+            <h3>Reliable</h3>
+            <p>Traceable samples, results and billing with a clear amendment history.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="I">
+          <span class="giant">I</span>
+          <div>
+            <h3>Innovative</h3>
+            <p>Role dashboards, analyser links and a patient portal in one suite.</p>
+          </div>
+        </article>
+        <article class="letter-panel" data-letter="S">
+          <span class="giant">S</span>
+          <div>
+            <h3>Software</h3>
+            <p>A laboratory ERP for ops, stock, HR, accounts and business intelligence.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEN MODULES -->
+    <section class="section portals" id="modules" aria-labelledby="modules-title">
+      <div class="section-head portals-head">
+        <p class="eyebrow">03 · Ten modules</p>
+        <h2 id="modules-title">Ten modules. One connected laboratory.</h2>
+        <p>
+          Follow one sample from front desk to patient portal — billing, collection, testing, stock,
+          reporting and the portal on one patient record.
+        </p>
+      </div>
+
+      <div class="door-wall" data-doors data-reveal>
+        <div class="door-rail" role="tablist" aria-label="Open a role dashboard" data-count="10">
+          <button class="door is-open" role="tab" aria-selected="true" data-door="reception">
+            <span class="door-num">01</span>
+            <span class="door-name">Receptionist</span>
+            <span class="door-hint">Front desk</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="phlebotomy">
+            <span class="door-num">02</span>
+            <span class="door-name">Phlebotomist</span>
+            <span class="door-hint">Collection</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="tech">
+            <span class="door-num">03</span>
+            <span class="door-name">Technologist</span>
+            <span class="door-hint">Analysis</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="path">
+            <span class="door-num">04</span>
+            <span class="door-name">Pathologist</span>
+            <span class="door-hint">Release</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="portal">
+            <span class="door-num">05</span>
+            <span class="door-name">Patient Portal</span>
+            <span class="door-hint">Access</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="inbound">
+            <span class="door-num">06</span>
+            <span class="door-name">Inbound Labs</span>
+            <span class="door-hint">Partners</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="accounts">
+            <span class="door-num">07</span>
+            <span class="door-name">Accounts</span>
+            <span class="door-hint">Finance</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="store">
+            <span class="door-num">08</span>
+            <span class="door-name">Store Manager</span>
+            <span class="door-hint">Inventory</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="hr">
+            <span class="door-num">09</span>
+            <span class="door-name">HR</span>
+            <span class="door-hint">People</span>
+          </button>
+          <button class="door" role="tab" aria-selected="false" data-door="admin">
+            <span class="door-num">10</span>
+            <span class="door-name">Admin</span>
+            <span class="door-hint">Oversight</span>
+          </button>
+        </div>
+        <p class="door-thread" aria-hidden="true"><span></span> Shared patient record</p>
+
+        <div class="door-room is-active" role="tabpanel" data-room="reception">
+          <div class="chapter-copy">
+            <h3>Shorter waits and fewer billing errors, from welcome to invoice.</h3>
+            <p>Step 1 · Front desk</p>
+            <ul>
+              <li>Patient registration</li>
+              <li>Automated invoicing</li>
+              <li>Cash &amp; credit billing</li>
+              <li>Test catalogue</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Receptionist</span><span>LARIS · Front desk</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Today</small><strong>42</strong><span>accessions</span></div>
+              <div class="tile"><small>Invoiced</small><strong class="money">PKR 186k</strong></div>
+              <div class="tile wide">
+                <small>Queue</small>
+                <ul>
+                  <li>ACC-1184 · CBC + Lipid <em class="ok">Paid</em></li>
+                  <li>ACC-1185 · LFT panel <em>Waiting</em></li>
+                  <li>ACC-1186 · Culture <em class="ok">Paid</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="phlebotomy" hidden>
+          <div class="chapter-copy">
+            <h3>Fewer identification errors and complete sample traceability.</h3>
+            <p>Step 2 · Collection</p>
+            <ul>
+              <li>Sample collection</li>
+              <li>Status tracking</li>
+              <li>Transport monitoring</li>
+              <li>Recollection records</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Phlebotomist</span><span>LARIS · Collection</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Collected</small><strong>38</strong><span>today</span></div>
+              <div class="tile"><small>In transit</small><strong>6</strong><span>to lab</span></div>
+              <div class="tile wide">
+                <small>ACC-1184</small>
+                <ul>
+                  <li>Tube A · CBC <em class="ok">Barcoded</em></li>
+                  <li>Tube B · Lipid <em class="ok">Barcoded</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="tech" hidden>
+          <div class="chapter-copy">
+            <h3>Faster processing, less manual paperwork, stronger quality assurance.</h3>
+            <p>Step 3 · Analysis</p>
+            <ul>
+              <li>Test queue</li>
+              <li>Analyzer integration</li>
+              <li>Critical value alerts</li>
+              <li>QC monitoring</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Technologist</span><span>LARIS · Analysis</span></div>
+            <div class="mock-stack">
+              <div class="tile">
+                <small>Test queue</small>
+                <ul class="sched">
+                  <li><time>09:40</time> ACC-1184 CBC <em>Running</em></li>
+                  <li class="now"><time>09:55</time> ACC-1184 Lipid <em>Next</em></li>
+                  <li><time>10:10</time> ACC-1186 Culture <em>Queued</em></li>
+                </ul>
+              </div>
+              <div class="tile">
+                <small>Critical alert</small>
+                <p><strong>K+ 6.1</strong> Notify pathologist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="path" hidden>
+          <div class="chapter-copy">
+            <h3>Faster report release with a complete medico-legal audit trail.</h3>
+            <p>Step 4 · Release</p>
+            <ul>
+              <li>Digital report review</li>
+              <li>Result validation</li>
+              <li>Comment templates</li>
+              <li>Amendment history</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Pathologist</span><span>LARIS · Release</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Pending verify</small><strong>7</strong><span>reports</span></div>
+              <div class="tile"><small>Released today</small><strong>31</strong></div>
+              <div class="tile wide">
+                <small>ACC-1184 · Lipid</small>
+                <ul>
+                  <li>Chol 198 · LDL 112 <em class="ok">Valid</em></li>
+                  <li>Portal PDF <em class="ok">Ready</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="portal" hidden>
+          <div class="chapter-copy">
+            <h3>Convenient patient access, with less workload for reception.</h3>
+            <p>Step 5 · Access</p>
+            <ul>
+              <li>Online reports</li>
+              <li>PDF downloads</li>
+              <li>Secure login</li>
+              <li>Invoice history</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Patient Portal</span><span>LARIS · Access</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Reports ready</small><strong>1</strong><span>new PDF</span></div>
+              <div class="tile"><small>Invoice</small><strong class="ok">Paid</strong></div>
+              <div class="tile wide">
+                <small>ACC-1184</small>
+                <ul>
+                  <li>Lipid profile PDF <em class="ok">Ready</em></li>
+                  <li>Invoice #LAB-902 <em class="ok">Paid</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="inbound" hidden>
+          <div class="chapter-copy">
+            <h3>Partner labs send work to you and follow progress and accounts in one place.</h3>
+            <p>Partners</p>
+            <ul>
+              <li>Live test status</li>
+              <li>Patient ledgers</li>
+              <li>Cash ledgers</li>
+              <li>Inbound discounts</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Inbound Labs</span><span>LARIS · Partners</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Partner requests</small><strong>19</strong><span>today</span></div>
+              <div class="tile"><small>On track</small><strong>16</strong><span>samples</span></div>
+              <div class="tile wide">
+                <small>Awaiting reply</small>
+                <p>3 partner labs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="accounts" hidden>
+          <div class="chapter-copy">
+            <h3>Real-time financial visibility and tighter control over profitability.</h3>
+            <p>Finance</p>
+            <ul>
+              <li>Revenue</li>
+              <li>Bank reconciliation</li>
+              <li>Profitability</li>
+              <li>Statements</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Accounts</span><span>LARIS · Finance</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Today · revenue</small><strong class="money">PKR 186k</strong></div>
+              <div class="tile"><small>Outstanding</small><strong>12</strong><span>invoices</span></div>
+              <div class="tile wide">
+                <small>Inflow</small>
+                <p>Cash &amp; credit reconciled to accessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="store" hidden>
+          <div class="chapter-copy">
+            <h3>Less wastage, fewer stock-outs, clearer accountability.</h3>
+            <p>Inventory</p>
+            <ul>
+              <li>Batch &amp; lot tracking</li>
+              <li>Expiry monitoring</li>
+              <li>Stock issue</li>
+              <li>Reorder alerts</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Store Manager</span><span>LARIS · Inventory</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Reagent · low</small><strong>EDTA</strong><span>Reorder</span></div>
+              <div class="tile"><small>Issued today</small><strong>38</strong><span>to lab</span></div>
+              <div class="tile wide">
+                <small>Main store · Site store</small>
+                <p>Batch, expiry and reorder on one view</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="hr" hidden>
+          <div class="chapter-copy">
+            <h3>Centralised employee management and accurate payroll.</h3>
+            <p>People</p>
+            <ul>
+              <li>Attendance</li>
+              <li>Shifts</li>
+              <li>Leave</li>
+              <li>Payroll</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>HR</span><span>LARIS · People</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>Present</small><strong>86</strong><span>of 92</span></div>
+              <div class="tile"><small>On leave</small><strong>4</strong><span>approved</span></div>
+              <div class="tile wide">
+                <small>Payroll</small>
+                <p>Open · closes Friday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="door-room" role="tabpanel" data-room="admin" hidden>
+          <div class="chapter-copy">
+            <h3>Real-time operational control and better use of resources.</h3>
+            <p>Oversight</p>
+            <ul>
+              <li>Turnaround surveillance</li>
+              <li>Pending workload</li>
+              <li>Staff productivity</li>
+              <li>Compliance</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><span>Admin + CEO</span><span>LARIS · Oversight</span></div>
+            <div class="mock-grid">
+              <div class="tile"><small>TAT · CBC</small><strong>48m</strong><span class="ok">On target</span></div>
+              <div class="tile"><small>Workload</small><strong>74%</strong><span>balanced</span></div>
+              <div class="tile wide">
+                <small>Today · P&amp;L snapshot</small>
+                <p>Revenue PKR 186k · consumables 22k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="proof" data-count="4" aria-label="Ten roles. One record. Full control.">
+      <div class="proof-item" data-reveal>
+        <strong>10</strong>
+        <span>role dashboards, from reception to admin</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>1</strong>
+        <span>patient record from registration to final report</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>2</strong>
+        <span>ways to run: standalone or with ClinTa Extended</span>
+      </div>
+      <div class="proof-item" data-reveal>
+        <strong>Full</strong>
+        <span>sample, result &amp; rupee trace in one place</span>
+      </div>
+    </section>
+
+    <!-- FIT — Standalone / Extended -->
+    <section class="section" id="extended" aria-labelledby="extended-title">
+      <div class="laris-fit" data-reveal>
+        <div class="laris-fit-copy">
+          <div class="section-head laris-fit-head">
+            <p class="eyebrow">04 · Fit</p>
+            <h2 id="extended-title">Run it on its own, or alongside ClinTa Extended.</h2>
+            <p>
+              A complete laboratory suite that fits your hospital’s setup, without replacing your wider
+              hospital workflows.
+            </p>
+          </div>
+          <ul class="laris-fit-points">
+            <li>
+              <b>Run independently.</b> Manage your laboratory with all ten modules working as one
+              connected workflow, without needing ClinTa Extended.
+            </li>
+            <li>
+              <b>Integrate seamlessly.</b> Connect LARIS to ClinTa Extended so lab operations and the
+              hospital system work together.
+            </li>
+          </ul>
+        </div>
+
+        <div class="hims" data-hims>
+          <div class="hims-switch" role="group" aria-label="Choose how LARIS is deployed">
+            <button type="button" aria-pressed="true" data-hims-mode="standalone">Standalone</button>
+            <button type="button" aria-pressed="false" data-hims-mode="hims">With ClinTa Extended</button>
+          </div>
+
+          <div class="hims-flow">
+            <div class="hims-card is-hims">
+              <h3>ClinTa Extended</h3>
+              <small>Hospital management</small>
+              <ul>
+                <li>Registration</li>
+                <li>Admissions</li>
+                <li>Hospital-wide processes</li>
+              </ul>
+            </div>
+
+            <div class="hims-lane" aria-hidden="true">
+              <div class="hims-track is-in"><em>Patient &amp; orders</em><i></i><i></i></div>
+              <div class="hims-track is-out"><em>Results &amp; billing</em><i></i><i></i></div>
+            </div>
+
+            <div class="hims-card is-laris">
+              <h3>ClinTa LARIS</h3>
+              <small>10 modules, one workflow</small>
+              <div class="hims-chips" aria-hidden="true">
+                <span title="Receptionist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg>
+                </span>
+                <span title="Phlebotomist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                </span>
+                <span title="Technologist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
+                </span>
+                <span title="Pathologist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </span>
+                <span title="Patient Portal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </span>
+                <span title="Inbound Labs">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+                </span>
+                <span title="Accounts">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+                </span>
+                <span title="Store Manager">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.7a2 2 0 0 0 2 0l6-3.5a2 2 0 0 0 1-1.7v-7a2 2 0 0 0-1-1.7l-6-3.5a2 2 0 0 0-2 0l-6 3.5a2 2 0 0 0-1 1.7v7a2 2 0 0 0 1 1.7z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/></svg>
+                </span>
+                <span title="HR">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+                </span>
+                <span title="Admin">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hims-cap" aria-live="polite" data-hims-cap>
+            Standalone: LARIS runs the whole laboratory on its own.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-layout">
+        <div class="section-head">
+          <p class="eyebrow">05 · Questions</p>
+          <h2 id="faq-title">The right questions before you make the switch.</h2>
+          <p>From connecting ClinTa Extended to running your whole laboratory workflow.</p>
+        </div>
+        <div class="faq-grid" data-faq>
+          <details open>
+            <summary><span>01</span> What makes ClinTa LARIS a Lab ERP rather than just laboratory software?</summary>
+            <p>
+              Laboratory software stops at tests and reports. LARIS also runs billing, stock, HR,
+              accounts and the patient portal on one shared patient record.
+            </p>
+          </details>
+          <details>
+            <summary><span>02</span> Is ClinTa LARIS suitable for my laboratory, regardless of its size?</summary>
+            <p>
+              Yes. Single-department labs start with the core modules, multi-department labs run all
+              ten, and modules can be switched on as you grow.
+            </p>
+          </details>
+          <details>
+            <summary><span>03</span> What reporting and insights can I get from ClinTa LARIS?</summary>
+            <p>
+              Each role gets its own dashboard, and Admin sees turnaround times, workload,
+              productivity, compliance and profit and loss in one place.
+            </p>
+          </details>
+          <details>
+            <summary><span>04</span> Is ClinTa LARIS easy to learn and use?</summary>
+            <p>
+              Yes. Each person learns only the screens for their role, handoffs between modules are
+              automatic, and we train each team during rollout.
+            </p>
+          </details>
+          <details>
+            <summary><span>05</span> How secure is ClinTa LARIS for patient records?</summary>
+            <p>
+              Access is role-based, patients sign in securely to see their own reports, and every
+              report change is kept in an amendment history.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="demo" id="demo" aria-labelledby="demo-title">
+      <div class="demo-shell">
+        <div class="demo-copy">
+          <p class="eyebrow">06 · Request a demo</p>
+          <h2 id="demo-title">See your departments working as one.</h2>
+          <p>
+            Tell us how your laboratory runs today. We’ll follow a sample through the modules that
+            matter to you and send a clear quote.
+          </p>
+          <ul class="hero-facts">
+            <li>No payment required</li>
+            <li>No obligation</li>
+            <li>Clear pricing on the call</li>
+          </ul>
+          <div class="demo-contacts">
+            <a href="tel:+923033330023">+92 303 333 0023</a>
+            <a href="https://wa.me/923033330023" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="demo-form" data-demo-form>
+          <ol class="form-progress" data-progress aria-label="Form progress">
+            <li class="is-current" data-prog="1"><span>1</span> Facility type</li>
+            <li data-prog="2"><span>2</span> Your details</li>
+            <li data-prog="3"><span>3</span> Done</li>
+          </ol>
+          <p class="step-meta" data-step-meta>Step 1 of 3</p>
+
+          <div class="form-step is-active" data-step="1">
+            <p class="step-label">I am a…</p>
+            <p class="step-hint">Select your facility type to continue.</p>
+            <label class="choice"><input type="radio" name="variant" value="Laboratory" required /><span><strong>Laboratory</strong> Pathology or diagnostic lab · Single or multi-department</span></label>
+            <label class="choice"><input type="radio" name="variant" value="Hospital" /><span><strong>Hospital</strong> Hospital lab · Standalone or with ClinTa Extended</span></label>
+            <label class="choice"><input type="radio" name="variant" value="Other" /><span><strong>Other</strong> Collection centre, partner lab or something else</span></label>
+          </div>
+          <div class="form-step" data-step="2" hidden>
+            <p class="step-label">Where should we reach you?</p>
+            <label>Your name *<input type="text" name="name" required autocomplete="name" /></label>
+            <label>Phone number *<input type="tel" name="phone" required autocomplete="tel" /></label>
+            <div class="form-row">
+              <label><span>City <span class="opt">(optional)</span></span><input type="text" name="city" /></label>
+              <label><span>Email <span class="opt">(optional)</span></span><input type="email" name="email" /></label>
+            </div>
+            <div class="demo-actions">
+              <button type="button" class="btn btn-ghost" data-back>Back</button>
+              <button type="submit" class="btn">Submit request</button>
+            </div>
+          </div>
+          <div class="form-success" data-success hidden>
+            <h3>Request received, <span data-success-name>lab</span>.</h3>
+            <p>We’ll message you on WhatsApp within one working day to pick a time. Nothing to pay, nothing to sign.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
